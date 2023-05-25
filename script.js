@@ -22,9 +22,28 @@
 // console.log(letters.join("-"));
 
 //at method
-const arr = [23, 11, 64];
-console.log(arr.at(0));
+// const arr = [23, 11, 64];
+// console.log(arr.at(0));
 // getting the last index value
-console.log(arr.at(-1));
+// console.log(arr.at(-1));
 // getting the first index value
-console.log(arr.at(1));
+// console.log(arr.at(1));
+
+//forEach
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// movements.forEach((movement) => {
+//   if (movement > 0) {
+//     console.log(`Positive movement: ${movement}`);
+//   } else {
+//     console.log(`Negative movements: ${movement}`);
+//   }
+// });
+
+movements.forEach((mov, i, arr) => {
+  if (mov > 0) {
+    console.log(`Movment ${i + 1}: you deposited ${mov}`);
+  } else {
+    console.log(`Movement ${i + 1}: you widthraw ${mov}`);
+  }
+});
